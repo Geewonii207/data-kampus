@@ -18,6 +18,26 @@ CREATE TABLE tbl_datasiswa(
     id_jurusan VARCHAR (60)  ,
     tgl_tambah TIMESTAMP 
 );
+INSERT INTO tbl_datasiswa
+(id_kelas, nis, id_jurusan)
+VALUES
+('X2019', '100050100', 'RPL'),
+('X2019', '10005012361', 'RPL'),
+('X2019', '100050305', 'TKJ'),
+('X2019', '100050457', 'TKJ'),
+('X2019', '100050648', 'MM'),
+('X2020', '100051570', 'RPL'),
+('X2020', '100051672', 'RPL'),
+('X2020', '1000516763', 'TKJ'),
+('X2020', '100051784', 'TKJ'),
+('X2020', '100052304', 'MM'),
+('X2021', '100052334', 'RPL'),
+('X2021', '10005234', 'RPL'),
+('X2021', '100053415', 'TKJ'),
+('X2021', '1000535606', 'TKJ'),
+('X2021', '10005678911', 'MM');
+
+
 ALTER TABLE tbl_datasiswa
 ADD CONSTRAINT fk_idkelas
 FOREIGN KEY (id_kelas) REFERENCES tbl_kelas (id_kelas);
